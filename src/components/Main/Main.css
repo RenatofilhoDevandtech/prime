@@ -1,16 +1,60 @@
+/* Estilização do banner */
 
-.banner {
-    border: solid 2px red;
-    background-image: url('../../assets/banner.png');
+/* Estilo para a main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+  }
+  /* Estilo para a seção de banner */
+  .banner {
+    background-image: url('../../assets/prime.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 70vh;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 70vh;
-}
+    height: 60vh;
+  }
+  
+  /* Estilo para a seção de cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para cada card */
+  .cards div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .cards div:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Estilo para a imagem dentro do card */
+  .cards img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Estilo para o texto dentro do card */
+  .cards p {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
